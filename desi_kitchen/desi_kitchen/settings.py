@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'desiapp.apps.DesiappConfig',
 ]
 
 MIDDLEWARE = [
@@ -76,10 +77,10 @@ WSGI_APPLICATION = 'desi_kitchen.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'desikitchendb',
-        'USER': 'rpsm',
-        'PASSWORD': 'rpsm',
-        'HOST': 'localhost',   # Or the appropriate host
+        'NAME': 'testdb',
+        'USER': 'admin',
+        'PASSWORD': 'desikitchen',
+        'HOST': 'dk-rds.cwbiilmsadoh.ap-south-1.rds.amazonaws.com',   # Or the appropriate host
         'PORT': '3306',        # Or the appropriate port
     }
 }
